@@ -10,7 +10,7 @@ public class Print extends Operator {
 
     @Override
     public void exec(Interpreter inge) {
-        Object res;
+        Object res = null;
         try {
             res = Expression.eval(inge.getVars(), code);
             System.out.println(res);

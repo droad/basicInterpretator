@@ -10,7 +10,7 @@ public class Expression {
 
     public static Object eval(Map<String, Double> vars, String code) throws ScriptException {
         ScriptEngineManager mgr = new ScriptEngineManager();
-        ScriptEngine engine = mgr.getEngineByName("");
+        ScriptEngine engine = mgr.getEngineByName("JavaScript");
         return engine.eval(code);
 
     }
