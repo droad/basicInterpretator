@@ -9,19 +9,19 @@ public class Print extends Operator {
     }
 
     @Override
-    public void exec(Interpreter inte) {
-        Object res = null;
+    public void exec(Interpreter inge) {
+        Object res;
         try {
-            res = Expression.eval(inte.getVars(), code);
+            res = Expression.eval(inge.getVars(), code);
             System.out.println(res);
         } catch (ScriptException e) {
             e.printStackTrace();
         }
-        inte.next();
+        inge.next();
 
     }
 
 
 }
-}
+
 
