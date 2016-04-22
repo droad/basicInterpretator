@@ -9,6 +9,6 @@ abstract public class Operator {
         this.code = code;
     }
 
-    abstract public void exec(Interpreter inte);
+    abstract public void exec(Interpreter inge);
 
 }

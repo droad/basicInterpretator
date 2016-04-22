@@ -18,10 +18,7 @@ public class Print extends Operator {
             e.printStackTrace();
         }
         inge.next();
-
     }
-
-
 }
 
 
