@@ -11,4 +11,8 @@ abstract public class Operator {
 
     abstract public void exec(Interpreter inge);
 
+    @Override
+    public String toString() {
+        return getClass().getName() + " " + code;
+    }
 }
